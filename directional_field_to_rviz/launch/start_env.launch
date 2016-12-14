@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="directional_field_to_rviz" type="main" name="directional_field" respawn="false" output="screen" />
+	<node pkg="directional_field_to_rviz" type="test.py" name="test" respawn="false"/>
+	<node pkg="pure_pursuit_controller" type="pure_pursuit_controller_node" name="purePursuitController" respawn="false" output="screen"/>
+        <node pkg="rviz" name="rviz" type="rviz" args="-d $(find directional_field_to_rviz)/rviz/my_rviz.rviz" />
+
+</launch>

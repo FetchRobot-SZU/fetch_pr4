@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <!-- default settings -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- cafe table -->
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>table1</name>
+      <pose>3.0 0 0 0 0 0</pose>
+    </include>
+    <!-- grey walls -->
+    <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_back</name>
+      <pose>-3.0 0 0 0 0 1.57</pose>
+    </include>
+    <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_left_1</name>
+      <pose>0.7 3.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_right_1</name>
+      <pose>0.7 -3.9 0 0 0 0</pose>
+    </include>
+ <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_left_2</name>
+      <pose>8 3.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_right_2</name>
+      <pose>8 -3.9 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://grey_wall</uri>
+      <name>wall_front</name>
+      <pose>11.7 0 0 0 0 1.57</pose>
+    </include>
+  </world>
+</sdf>
